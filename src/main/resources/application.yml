@@ -1,0 +1,17 @@
+spring:
+  webflux:
+    static-path-pattern: /**   
+  redis:
+    host: localhost
+    port: 6379
+    password: root
+    push-messages: true
+    
+logging:
+  pattern:
+    console: '%clr(%5p) %clr(%-15.15logger{14}){cyan}%clr(:){faint} %m%n%wEx'
+  level:
+    org: warn
+    io: warn
+    reactor: info      
+    
